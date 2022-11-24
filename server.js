@@ -23,7 +23,7 @@ app.use('/breads', breadsController)
 
 //404 catch all has to be after landing page
 app.get('*', (req, res) => {
-    res.send('U LOST!!!')
+    res.send('<a href="/breads">404: Return to main page</a>')
 })
 
 app.listen(PORT, () => {
