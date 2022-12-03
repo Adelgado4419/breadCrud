@@ -10,8 +10,7 @@ breads.get('/', (req, res) => {
         {
             breads: Bread,
             title: 'Index Page'
-        }
-    )
+        })
     // res.send(Bread)
 })
 
@@ -20,10 +19,12 @@ breads.get('/new', (req, res) => {
     res.render('new')
 })
 
+//EDIT
 breads.get('/:indexArray/edit', (req, res) => {
   res.render('edit', {
       bread: Bread[req.params.indexArray],
-      index: req.params.indexArray  })
+      index: req.params.indexArray  }
+      ) 
 })
 
 //why does the /new have to be on top of the show?
@@ -39,7 +40,7 @@ breads.get('/:arrayIndex', (req, res) => {
     })
     //res.send(Bread)
 
-//EDIT
+
 
 
 //UPDATE bread

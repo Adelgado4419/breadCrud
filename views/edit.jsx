@@ -30,7 +30,7 @@ function Edit ({bread, index}) {
             defaultValue={bread.hasGluten}
           />
           <br />
-          <input type="submit"/>
+         <input type="submit" href="breads"/>
         </form>
       </Default>
     )
