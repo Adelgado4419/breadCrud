@@ -1,9 +1,10 @@
 const express = require('express')
+const methodOverride = require('method-override')
 
 require('dotenv').config()
 const PORT = process.env.PORT
 const app = express()
-const methodOverride = require('method-override')
+
 
 //middleware
 app.use(express.static('public'))

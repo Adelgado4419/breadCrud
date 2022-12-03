@@ -33,6 +33,7 @@ function Edit ({bread, index}) {
          <input type="submit" href="breads"/>
         </form>
       </Default>
+      
     )
 }
 
