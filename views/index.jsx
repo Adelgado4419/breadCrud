@@ -1,5 +1,6 @@
 const React = require('react')
 const Default = require('./layouts/Default')
+const baker_seed = require('../models/baker_seed')
 
 
 function Index ({breads, bakers,  title}) {
@@ -11,7 +12,7 @@ function Index ({breads, bakers,  title}) {
                     {bakers.map((baker) => {
                         return (
                             <li key={baker.id}>
-                                <a href={`/baker/${baker.id}`}>{baker.name}</a>
+                                <a href={`/bakers/${baker.id}`}>{baker.name}</a>
                             </li>
                         )
                     })}
@@ -42,3 +43,6 @@ function Index ({breads, bakers,  title}) {
 
 
 module.exports = Index
+
+
+

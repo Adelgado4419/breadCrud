@@ -36,12 +36,11 @@ app.use('/breads', breadsController)
 const bakersController = require('./controllers/bakers_controller.js')
 app.use('/bakers', bakersController)
 
-//start watching at 1:40 in, for finishing this
 
 //404 catch all has to be after landing page
-app.get('*', (req, res) => {
-    res.send('<a href="/breads">404: Return to main page</a>')
-})
+// app.get('*', (req, res) => {
+//     res.send('<a href="/breads">404: Return to main page</a>')
+// })
 
 
 app.listen(PORT, () => {
